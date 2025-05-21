@@ -1,9 +1,8 @@
-# Active Directory Lab
 
 ## Diagram
 
 Below is a logical diagram of what we can expect from our Active Directory setup
-![ADLab drawio](https://github.com/user-attachments/assets/5444d771-180f-4c2c-ae4b-ae118297e25e)
+![ADLab drawio (2)](https://github.com/user-attachments/assets/7595f8a8-446c-4670-8531-2429c023bcda)
 
 
 # Active-Directory
