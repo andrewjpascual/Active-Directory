@@ -9,4 +9,4 @@ Below is our logical diagram for what we can expect from our Active Directory La
 
 2. I then configured Active Directory Server on the ADDC01. I added a new user to the AD where the TEST server utilizes.
 
-3. On the Ubuntu Server, I then setup Splunk as the Receiving Server for Telemetry and alerts. The sending servers would be the Domain Controller and Test Servers. Once Splunk has been configured on the sending servers, we can utilize the Splunk Dashboard and see our aggregated log entries. Once completed, I setup alerts for any unrecognized IPs accessing my ADDC01 or TEST servers.
+3. On the Ubuntu Server, I set up Splunk as the receiving server for telemetry and alerts. The sending servers include the Domain Controller and test server. Once Splunk was configured on those servers, we were able to use the Splunk Dashboard to view aggregated log entries. Afterward, I configured alerts to detect any unrecognized IP addresses accessing the ADDC01 or TEST servers.
