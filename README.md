@@ -15,8 +15,12 @@ Below is our logical diagram for what we can expect from our Active Directory La
 
 ## Gallery Walkthrough
 
-Automated Workflow
+Automated Workflow Diagram. This is all initiated through a Webhook event when we receive an alert in Splunk.
 ![Shuffler2](https://github.com/user-attachments/assets/dffa80ee-6bbe-4fad-b894-1d31de822e20)
+
+Attacker Successfully authenticates into my Test server:
+![bigattack](https://github.com/user-attachments/assets/cb63170b-9e08-4e86-8233-6fb0ec7b33af)
+
 
 Receiving the Alert in Splunk
 ![Splunk Alert](https://github.com/user-attachments/assets/d08fdb4a-23c2-4429-9f18-88e6244bb110)
