@@ -54,7 +54,7 @@ Disabled alert sent to Slack; Steven has been disabled
 ## Challenges
 1. Cost of this home lab. I kept this lab up online for about a week and it cost about $34. I was able to get a free $300 credit for servers by signing up through the MyDFIR Referral (Vultr referral link below) 
 
-2. Shufflr bugs. I kept running into authentication and indexing errors on the Shufflr application (first image in the gallery). Most of this was either resolved by refreshing the page or reloading the workflow. I suspect it was due to caching and since I would test different parts of the workflow individually, this may have caused such errors.
+2. Shuffler bugs. I kept running into authentication and indexing errors on the Shuffler application (first image in the gallery). Most of this was either resolved by refreshing the page or reloading the workflow. I suspect it was due to caching and since I would test different parts of the workflow individually, this may have caused such errors.
 
 <!-- CONTACT -->
 ## Contact
