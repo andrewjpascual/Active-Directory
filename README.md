@@ -6,13 +6,25 @@ Below is our logical diagram for what we can expect from our Active Directory La
 
 <!-- Steps -->
 ## Steps Taken
-1. Set up 3 virtual machines. In this lab, I decided to utilize Vultr to setup and host my VMs. I have 3 VMs: Windows Domain Controller (ADDC01), Windows Test Server (TEST), and Ubuntu Splunk Server (SPLUNK).
+1. Virtual Machine Setup
+I deployed three virtual machines using Vultr to host and manage the lab environment. The VMs include:
 
-2. I then configured Active Directory Server on the ADDC01. I added a new user to the AD where the TEST server utilizes.
+* ADDC01: A Windows Server configured as the Active Directory Domain Controller
 
-3. On the Ubuntu Server, I set up Splunk as the receiving server for telemetry and alerts. The sending servers include the Domain Controller and test server. Once Splunk was configured on those servers, we were able to use the Splunk Dashboard to view aggregated log entries. Afterward, I configured alerts to detect any unrecognized IP addresses accessing the ADDC01 or TEST servers. I also setup a Slack channel to monitor these alerts and post them automatically as they come in.
+* TEST: A Windows-based test server
 
-4. Set up an automated workflow that consists of an alert from Splunk when detecting an unrecognized IP address to the Test server. Once completed, it will identify the user and create an alert within my Slack alerts channel. This will also send an automated email to the SOC Analyst and ask if they would like to disable the compromised Active Directory user account. If confirmed, then the user will be disabled through the Domain Controller and another automated alert will be sent to the Slack alerts channel specifying the exact account that has been disabled.
+* SPLUNK: An Ubuntu server running Splunk for SIEM purposes
+
+2. On ADDC01, I installed and configured Active Directory Services. I also created a new user account in Active Directory, which the TEST server utilizes for authentication and access.
+
+3. On the Ubuntu-based SPLUNK server, I installed and configured Splunk to act as the central receiver for telemetry and alert data. Both the Domain Controller (ADDC01) and test server (TEST) were set up as log senders. With the Splunk Dashboard, I was able to view and analyze aggregated log data from all sources. I then configured alerts to trigger on any unrecognized IP addresses attempting to access ADDC01 or TEST. These alerts are automatically forwarded to a dedicated Slack channel for real-time monitoring.
+
+4. I implemented an automated incident response workflow triggered by Splunk alerts for unrecognized IP access to the TEST server. Upon detection:
+* The system identifies the user account involved.
+* An alert is posted to the Slack monitoring channel.
+* An automated email is sent to the SOC Analyst, asking whether the associated Active Directory user should be disabled.
+* If the analyst confirms, the account is disabled via the Domain Controller.
+* A follow-up alert is posted in the Slack channel, detailing the specific user account that was disabled.
 
 <!-- Images -->
 ## Gallery Walkthrough
