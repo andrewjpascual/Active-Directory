@@ -1,9 +1,10 @@
-
+<!-- Logical Diagram -->
 ## Diagram
 
 Below is our logical diagram for what we can expect from our Active Directory Lab
 ![ADLab drawio](https://github.com/user-attachments/assets/f50a67eb-d6ca-42c5-bfb4-13f46bf41d24)
 
+<!-- Steps -->
 ## Steps Taken
 1. Set up 3 virtual machines. In this lab, I decided to utilize Vultr to setup and host my VMs. I have 3 VMs: Windows Domain Controller (ADDC01), Windows Test Server (TEST), and Ubuntu Splunk Server (SPLUNK).
 
@@ -13,6 +14,7 @@ Below is our logical diagram for what we can expect from our Active Directory La
 
 4. Set up an automated workflow that consists of an alert from Splunk when detecting an unrecognized IP address to the Test server. Once completed, it will identify the user and create an alert within my Slack alerts channel. This will also send an automated email to the SOC Analyst and ask if they would like to disable the compromised Active Directory user account. If confirmed, then the user will be disabled through the Domain Controller and another automated alert will be sent to the Slack alerts channel specifying the exact account that has been disabled.
 
+<!-- Images -->
 ## Gallery Walkthrough
 
 Automated Workflow Diagram. This is all initiated through a Webhook event when we receive an alert in Splunk.
@@ -38,4 +40,23 @@ After confirming to disable (true); We notice that in our example Steven has bee
 Disabled alert sent to Slack; Steven has been disabled
 ![Slack Alert](https://github.com/user-attachments/assets/748dc4b6-d75b-4fc1-b923-e4b47f0c1515)
 
+<!-- Challenges -->
+## Challenges
+1. Cost of this home lab. I kept this lab up online for about a week and it cost about $34. I was able to get a free $300 credit for servers by signing up through the MyDFIR Referral (Vultr referral link below) 
 
+2. Shufflr bugs. I kept running into authentication and indexing errors on the Shufflr application (first image in the gallery). Most of this was either resolved by refreshing the page or reloading the workflow. I suspect it was due to caching and since I would test different parts of the workflow individually, this may have caused such errors.
+
+<!-- CONTACT -->
+## Contact
+
+Andrew Pascual - andrewjpascual@gmail.com
+
+https://github.com/andrewjpascual/HostScanner
+
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* [MyDFIR](https://www.mydfir.com/)
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+* [Vultr Referral](https://www.vultr.com/?ref=9765025-9J) *New users only
