@@ -10,9 +10,7 @@ Below is our logical diagram for what we can expect from our Active Directory La
 I deployed three virtual machines using Vultr to host and manage the lab environment. The VMs include:
 
 * ADDC01: A Windows Server configured as the Active Directory Domain Controller
-
 * TEST: A Windows-based test server
-
 * SPLUNK: An Ubuntu server running Splunk for SIEM purposes
 
 2. On ADDC01, I installed and configured Active Directory Services. I also created a new user account in Active Directory, which the TEST server utilizes for authentication and access.
