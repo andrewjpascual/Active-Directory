@@ -27,17 +27,17 @@ I deployed three virtual machines using Vultr to host and manage the lab environ
 <!-- Images -->
 ## Gallery Walkthrough
 
-Automated Workflow Diagram. This is all initiated through a Webhook event when we receive an alert in Splunk.
+Automated Workflow Diagram. This is all initiated through a webhook event when we receive an alert in Splunk.
 ![Shuffler2](https://github.com/user-attachments/assets/dffa80ee-6bbe-4fad-b894-1d31de822e20)
 
-Attacker Successfully authenticates into my Test server:
+Attacker successfully authenticates into my Test server:
 ![bigattack](https://github.com/user-attachments/assets/cb63170b-9e08-4e86-8233-6fb0ec7b33af)
 
 
-Receiving the Alert in Splunk
+Receiving the alert in Splunk
 ![Splunk Alert](https://github.com/user-attachments/assets/d08fdb4a-23c2-4429-9f18-88e6244bb110)
 
-Automated Alert sent to Slack; We see a user named Steven has an unauthorized login
+Automated alert sent to Slack; We see a user named Steven has an unauthorized login
 ![FirstSlackAlert](https://github.com/user-attachments/assets/ea8d6a66-278a-4d18-aaeb-666aee826489)
 
 
