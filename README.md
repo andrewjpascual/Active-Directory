@@ -60,6 +60,14 @@ Disabled alert sent to Slack; Steven has been disabled
 
 2. Shuffler bugs. I kept running into authentication and indexing errors on the Shuffler application. Most of this was either resolved by refreshing the page or reloading the workflow. I suspect it was due to caching and since I would test different parts of the workflow individually, this may have caused such errors.
 
+<!-- Tools Used -->
+## Tools Used
+Vultr
+Splunk
+Shuffle
+Slack
+Draw.io
+
 <!-- CONTACT -->
 ## Contact
 
