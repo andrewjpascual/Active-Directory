@@ -31,7 +31,7 @@ Automated Workflow Diagram. This is all initiated through a webhook event when w
 ![Shuffler2](https://github.com/user-attachments/assets/dffa80ee-6bbe-4fad-b894-1d31de822e20)
 
 
-Attacker successfully authenticates into my Test server:
+Attacker successfully authenticates into my Test server
 ![bigattack](https://github.com/user-attachments/assets/cb63170b-9e08-4e86-8233-6fb0ec7b33af)
 
 
