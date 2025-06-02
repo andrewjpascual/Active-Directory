@@ -56,7 +56,7 @@ Disabled alert sent to Slack; Steven has been disabled
 
 <!-- Challenges -->
 ## Challenges
-1. Cost of this home lab. I kept this lab up online for about a week through Vultr, which is a clou VM service, and it cost about $34. I was able to get a free $300 credit for these servers by signing up through the MyDFIR Referral (Vultr referral link below) 
+1. Cost of this home lab. I kept this lab up online for about a week through Vultr, which is a cloud VM service, and it cost about $34. I was able to get a free $300 credit for these servers by signing up through the MyDFIR Referral (Vultr referral link below) 
 
 2. Shuffler bugs. I kept running into authentication and indexing errors on the Shuffler application. Most of this was either resolved by refreshing the page or reloading the workflow. I suspect it was due to caching and since I would test different parts of the workflow individually, this may have caused such errors.
 
