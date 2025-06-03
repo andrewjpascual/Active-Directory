@@ -62,7 +62,7 @@ Disabled alert sent to Slack; Steven has been disabled
 
 <!-- Tools -->
 ## Tools Used
-
+Vultr, Splunk, Slack, Shuffle, Draw.io
 
 <!-- CONTACT -->
 ## Contact
